@@ -101,7 +101,7 @@ foreach($results as $result)
                                             </div>
 											
 											<div class="input-field col s12">
-<input id="numberofleave" type="text"  class="validate" autocomplete="off" name="numberofleave" value="<?php echo htmlentities($result->LeaveType);?>"  required>
+<input id="numberofleave" type="text"  class="validate" autocomplete="off" name="numberofleave" value="<?php echo htmlentities($result->NumberOfLeave);?>"  required>
                                                 <label for="numberofleave">Number Of Leave</label>
                                             </div>
 
