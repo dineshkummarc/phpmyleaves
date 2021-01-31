@@ -12,15 +12,15 @@ if(isset($_POST['update']))
 $lid=intval($_GET['lid']);
 $leavetype=$_POST['leavetype'];
 $description=$_POST['description'];
-$sql="update tblleavetype set LeaveType=:leavetype,Description=:description where id=:lid";
+$sql="update tbltotalleave set LeaveType=:leavetype,NumberOfLeave=:numberofleave,Description=:description where id=:lid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':leavetype',$leavetype,PDO::PARAM_STR);
+$query->bindParam(':numberofleave',$numberofleave,PDO::PARAM_STR);
 $query->bindParam(':description',$description,PDO::PARAM_STR);
 $query->bindParam(':lid',$lid,PDO::PARAM_STR);
 $query->execute();
 
-$msg="Leave type updated Successfully";
-
+$msg="Total Leave updated Successfully";
 
 }
 
@@ -31,7 +31,7 @@ $msg="Leave type updated Successfully";
     <head>
         
         <!-- Title -->
-        <title>Admin | Edit Leave Type</title>
+        <title>Admin | Edit Total Leave</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta charset="UTF-8">
@@ -99,6 +99,11 @@ foreach($results as $result)
 <input id="leavetype" type="text"  class="validate" autocomplete="off" name="leavetype" value="<?php echo htmlentities($result->LeaveType);?>"  required>
                                                 <label for="leavetype">Leave Type</label>
                                             </div>
+											
+											<div class="input-field col s12">
+<input id="numberofleave" type="text"  class="validate" autocomplete="off" name="numberofleave" value="<?php echo htmlentities($result->LeaveType);?>"  required>
+                                                <label for="numberofleave">Number Of Leave</label>
+                                            </div>
 
 
           <div class="input-field col s12">
@@ -108,15 +113,10 @@ foreach($results as $result)
  
 <?php }} ?>
 
-
-
 <div class="input-field col s12">
 <button type="submit" name="update" class="waves-effect waves-light btn indigo m-b-xs">Update</button>
 
 </div>
-
-
-
 
                                         </div>
                                        
