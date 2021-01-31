@@ -144,7 +144,6 @@ if($stats==1){
  <span style="color: blue">waiting for approval</span>
  <?php } ?>
 
-
                                              </td>
 
           <td>
@@ -161,9 +160,7 @@ if($stats==1){
               
             </main>
           
-        </div>
-
-        
+        </div>       
         
         <!-- Javascripts -->
         <script src="../assets/plugins/jquery/jquery-2.2.0.min.js"></script>
