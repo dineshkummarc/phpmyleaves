@@ -9,11 +9,13 @@ header('location:index.php');
 else{
 if(isset($_POST['add']))
 {
-$leavetype=$_POST['totalleave'];
+$leavetype=$_POST['leavetype'];
+$numerofleave=$_POST['numerofleave'];
 $description=$_POST['description'];
-$sql="INSERT INTO tblleavetype(totalLeave,Description) VALUES(:totalleave,:description)";
+$sql="INSERT INTO tbltotalleave(LeaveType,NumberOfLeave,Description) VALUES(:totalleave,:numerofleave,:description)";
 $query = $dbh->prepare($sql);
-$query->bindParam(':totalleave',$totalleave,PDO::PARAM_STR);
+$query->bindParam(':leavetype',$totalleave,PDO::PARAM_STR);
+$query->bindParam(':numerofleave',$totalleave,PDO::PARAM_STR);
 $query->bindParam(':description',$description,PDO::PARAM_STR);
 $query->execute();
 $lastInsertId = $dbh->lastInsertId();
@@ -87,8 +89,13 @@ $error="Something went wrong. Please try again";
                 else if($msg){?><div class="succWrap"><strong>SUCCESS</strong> : <?php echo htmlentities($msg); ?> </div><?php }?>
                                         <div class="row">
                                             <div class="input-field col s12">
-<input id="totalleave" type="text"  class="validate" autocomplete="off" name="totalleave"  required>
-                                                <label for="totalleave">Total Leaves</label>
+<input id="leavetype" type="text"  class="validate" autocomplete="off" name="totalleave"  required>
+                                                <label for="leavetype">Leave Type</label>
+                                            </div>
+											
+											<div class="input-field col s12">
+<input id="numberofleave" type="text"  class="validate" autocomplete="off" name="totalleave"  required>
+                                                <label for="numberofleave">Number Of Leave</label>
                                             </div>
 
 
@@ -97,17 +104,10 @@ $error="Something went wrong. Please try again";
                                                 <label for="deptshortname">Description</label>
                                             </div>
  
-
-
-
-
 <div class="input-field col s12">
 <button type="submit" name="add" class="waves-effect waves-light btn indigo m-b-xs">ADD</button>
 
 </div>
-
-
-
 
                                         </div>
                                        
