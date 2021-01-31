@@ -5,10 +5,7 @@
                             <img src="../assets/images/profile-image.png" class="circle" alt="">
                         </div>
                         <div class="sidebar-profile-info">
-                       
                                 <p>Admin</p>
-
-                         
                         </div>
                     </div>
             
