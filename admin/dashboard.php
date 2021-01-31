@@ -27,7 +27,6 @@ else{
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
         <link href="../assets/plugins/metrojs/MetroJs.min.css" rel="stylesheet">
         <link href="../assets/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet">
-
         	
         <!-- Theme Styles -->
         <link href="../assets/css/alpha.min.css" rel="stylesheet" type="text/css"/>
@@ -46,7 +45,7 @@ else{
                         <div class="card stats-card">
                             <div class="card-content">
                             
-                                <span class="card-title">Totle Regd Employee</span>
+                                <span class="card-title">Total Regd Employee</span>
                                 <span class="stats-counter">
 <?php
 $sql = "SELECT id from tblemployees";
