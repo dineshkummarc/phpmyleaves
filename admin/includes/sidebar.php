@@ -20,6 +20,17 @@
                             </ul>
                         </div>
                     </li>
+					
+					<li class="no-padding">
+                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">code</i>Total Leaves<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="addtotalleave.php">Add Total Leaves</a></li>
+                                <li><a href="managetotalleave.php">Manage Total Leaves</a></li>
+                            </ul>
+                        </div>
+                    </li>
+					
                     <li class="no-padding">
                         <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">code</i>Leave Type<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                         <div class="collapsible-body">
