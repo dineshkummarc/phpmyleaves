@@ -94,7 +94,7 @@ $error="Something went wrong. Please try again";
                                             </div>
 											
 											<div class="input-field col s12">
-<input id="numberofleave" type="text"  class="validate" autocomplete="off" name="totalleave"  required>
+<input id="numberofleave" type="text"  class="validate" autocomplete="off" name="numberofleave"  required>
                                                 <label for="numberofleave">Number Of Leave</label>
                                             </div>
 
