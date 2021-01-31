@@ -2,7 +2,7 @@
 session_start();
 error_reporting(0);
 include('includes/config.php');
-if(strlen($_SESSION['alogin'])==0)
+if(strlen($_SESSION['emplogin'])==0)
     {   
 header('location:index.php');
 }
@@ -45,7 +45,7 @@ $msg="Leave updated Successfully";
     <head>
         
         <!-- Title -->
-        <title>Admin | Leave Details </title>
+        <title>User | Leave Details </title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta charset="UTF-8">
