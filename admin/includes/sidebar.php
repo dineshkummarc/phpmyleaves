@@ -56,15 +56,9 @@
                         </div>
                     </li>
 
-
-
-
                         <li class="no-padding">
                                 <a class="waves-effect waves-grey" href="logout.php"><i class="material-icons">exit_to_app</i>Sign Out</a>
-                            </li>  
-                 
-
-                 
+                            </li>
               
                 </ul>
                    <div class="footer">
