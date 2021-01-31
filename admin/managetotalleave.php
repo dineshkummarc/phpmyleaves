@@ -10,11 +10,11 @@ else{
 if(isset($_GET['del']))
 {
 $id=$_GET['del'];
-$sql = "delete from  tblleavetype  WHERE id=:id";
+$sql = "delete from  tbltotalleave  WHERE id=:id";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':id',$id, PDO::PARAM_STR);
 $query -> execute();
-$msg="Leave type record deleted";
+$msg="Leave record deleted";
 
 }
  ?>
@@ -23,7 +23,7 @@ $msg="Leave type record deleted";
     <head>
         
         <!-- Title -->
-        <title>Admin | Manage Leave Type</title>
+        <title>Admin | Manage Total Leave</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta charset="UTF-8">
@@ -80,6 +80,7 @@ $msg="Leave type record deleted";
                                         <tr>
                                             <th>Sr no</th>
                                             <th>Leave Type</th>
+											<th>Number Of Leave</th>
                                             <th>Description</th>
                                             <th>Creation Date</th>
                                             <th>Action</th>
@@ -87,7 +88,7 @@ $msg="Leave type record deleted";
                                     </thead>
                                  
                                     <tbody>
-<?php $sql = "SELECT * from tblleavetype";
+<?php $sql = "SELECT * from tbltotalleave";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -99,10 +100,11 @@ foreach($results as $result)
                                         <tr>
                                             <td> <?php echo htmlentities($cnt);?></td>
                                             <td><?php echo htmlentities($result->LeaveType);?></td>
+											<td><?php echo htmlentities($result->NumberOfLeave);?></td>
                                             <td><?php echo htmlentities($result->Description);?></td>
                                             <td><?php echo htmlentities($result->CreationDate);?></td>
                                             <td><a href="editleavetype.php?lid=<?php echo htmlentities($result->id);?>"><i class="material-icons">mode_edit</i></a>
-                                            <a href="manageleavetype.php?del=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you want to delete');"> <i class="material-icons">delete_forever</i></a> </td>
+                                            <a href="managetotalleave.php?del=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you want to delete');"> <i class="material-icons">delete_forever</i></a> </td>
                                         </tr>
                                          <?php $cnt++;} }?>
                                     </tbody>
