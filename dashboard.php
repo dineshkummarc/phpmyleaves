@@ -45,21 +45,24 @@ else{
                         <div class="card stats-card">
                             <div class="card-content">
                             
-                                <span class="card-title">Total Regd Employee</span>
-                                <span class="stats-counter">
-<?php
-$sql = "SELECT id from tblemployees";
-$query = $dbh -> prepare($sql);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$empcount=$query->rowCount();
-?>
-
-                                    <span class="counter"><?php echo htmlentities($empcount);?></span></span>
+                                <span class="card-title">Total Leaves</span>
+                                <span class="stats-counter"></span>
                             </div>
                             <div id="sparkline-bar"></div>
                         </div>
                     </div>
+					
+					<div class="col s12 m12 l4">
+                        <div class="card stats-card">
+                            <div class="card-content">
+                            
+                                <span class="card-title">Leaves Applied</span>
+                                <span class="stats-counter"></span>
+                            </div>
+                            <div id="sparkline-bar"></div>
+                        </div>
+                    </div>
+					
                         <div class="col s12 m12 l4">
                         <div class="card stats-card">
                             <div class="card-content">
