@@ -24,7 +24,7 @@ foreach($results as $result)
                     </div>
 
                 <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
-
+                <li class="no-padding"><a class="waves-effect waves-grey" href="dashboard.php"><i class="material-icons">settings_input_svideo</i>Dashboard</a></li>
   <li class="no-padding"><a class="waves-effect waves-grey" href="myprofile.php"><i class="material-icons">account_box</i>My Profiles</a></li>
   <li class="no-padding"><a class="waves-effect waves-grey" href="emp-changepassword.php"><i class="material-icons">settings_input_svideo</i>Change Password</a></li>
                     <li class="no-padding">
