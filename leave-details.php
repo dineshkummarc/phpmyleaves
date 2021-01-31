@@ -190,28 +190,6 @@ if($stats==0)
 {
 
 ?>
-<tr>
- <td colspan="5">
-  <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Take&nbsp;Action</a>
-<form name="adminaction" method="post">
-<div id="modal1" class="modal modal-fixed-footer" style="height: 60%">
-    <div class="modal-content" style="width:90%">
-        <h4>Leave take action</h4>
-          <select class="browser-default" name="status" required="">
-                                            <option value="">Choose your option</option>
-                                            <option value="1">Approved</option>
-                                            <option value="2">Not Approved</option>
-                                        </select></p>
-                                        <p><textarea id="textarea1" name="description" class="materialize-textarea" name="description" placeholder="Description" length="500" maxlength="500" required></textarea></p>
-    </div>
-    <div class="modal-footer" style="width:90%">
-       <input type="submit" class="waves-effect waves-light btn blue m-b-xs" name="update" value="Submit">
-    </div>
-
-</div>   
-
- </td>
-</tr>
 <?php } ?>
    </form>                                     </tr>
                                          <?php $cnt++;} }?>
