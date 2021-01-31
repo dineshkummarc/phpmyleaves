@@ -83,7 +83,7 @@ $msg="Total Leave updated Successfully";
                 else if($msg){?><div class="succWrap"><strong>SUCCESS</strong> : <?php echo htmlentities($msg); ?> </div><?php }?>
 <?php
 $lid=intval($_GET['lid']);
-$sql = "SELECT * from tblleavetype where id=:lid";
+$sql = "SELECT * from tbltotalleave where id=:lid";
 $query = $dbh -> prepare($sql);
 $query->bindParam(':lid',$lid,PDO::PARAM_STR);
 $query->execute();
@@ -123,9 +123,7 @@ foreach($results as $result)
                                     </form>
                                 </div>
                             </div>
-                        </div>
-                     
-             
+                        </div>            
                    
                     </div>
                 
