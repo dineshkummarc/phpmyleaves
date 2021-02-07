@@ -28,11 +28,8 @@ echo "<script type='text/javascript'> document.location = 'emp-changepassword.ph
 } }
 
 else{
-
   echo "<script>alert('Invalid Details');</script>";
-
 }
-
 }
 
 ?><!DOCTYPE html>
@@ -53,11 +50,9 @@ else{
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="assets/plugins/material-preloader/css/materialPreloader.min.css" rel="stylesheet">
 
-
         <!-- Theme Styles -->
         <link href="assets/css/alpha.min.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
-
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -122,18 +117,14 @@ else{
                             <span class="chapter-title">ELMS | Employee Leave Management System</span>
                         </div>
 
-
                         </form>
-
 
                     </div>
                 </nav>
             </header>
 
-
             <aside id="slide-out" class="side-nav white fixed">
                 <div class="side-nav-wrapper">
-
 
                 <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion" style="">
                     <li>&nbsp;</li>
@@ -143,10 +134,7 @@ else{
                        <li class="no-padding"><a class="waves-effect waves-grey" href="admin/"><i class="material-icons">account_box</i>Admin Login</a></li>
 
                 </ul>
-          <div class="footer">
-                    <p class="copyright"><a href="http://www.code-projects.org/">Code-Projects </a>©</p>
-
-                </div>
+		  
                 </div>
             </aside>
             <main class="mn-inner">
