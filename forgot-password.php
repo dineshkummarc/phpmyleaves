@@ -34,7 +34,6 @@ $msg="Your Password succesfully changed";
         <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css"/>
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="assets/plugins/material-preloader/css/materialPreloader.min.css" rel="stylesheet">        
-
         	
         <!-- Theme Styles -->
         <link href="assets/css/alpha.min.css" rel="stylesheet" type="text/css"/>
@@ -113,20 +112,16 @@ $msg="Your Password succesfully changed";
                         <div class="header-title col s3">      
                             <span class="chapter-title">ELMS | Employee Leave Management System</span>
                         </div>
-                      
                            
                         </form>
-                     
                         
                     </div>
                 </nav>
             </header>
            
-           
             <aside id="slide-out" class="side-nav white fixed">
                 <div class="side-nav-wrapper">
                    
-                  
                 <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion" style="">
                     <li>&nbsp;</li>
                     <li class="no-padding"><a class="waves-effect waves-grey" href="index.php"><i class="material-icons">account_box</i>Employe Login</a></li>
@@ -135,10 +130,7 @@ $msg="Your Password succesfully changed";
                        <li class="no-padding"><a class="waves-effect waves-grey" href="admin/"><i class="material-icons">account_box</i>Admin Login</a></li>
                 
                 </ul>
-          <div class="footer">
-                    <p class="copyright"><a href="http://phpgurukul.com/">PHPGURUKUL </a>©</p>
-                
-                </div>
+				
                 </div>
             </aside>
             <main class="mn-inner">
@@ -199,7 +191,6 @@ foreach ($results as $result) {
  <label for="password">Confirm Password</label>
 </div>
 
-
 <div class="input-field col s12">
 <button type="submit" name="change" class="waves-effect waves-light btn indigo m-b-xs" onclick="return valid();">Change</button>
 
@@ -211,11 +202,6 @@ foreach ($results as $result) {
  <strong>ERROR</strong> : <?php echo htmlentities("Invalid details");
 }?></div>
 <?php } ?>
-
-
-
-
-
 
                               </div>
                           </div>
