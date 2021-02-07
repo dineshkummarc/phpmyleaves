@@ -37,17 +37,12 @@ foreach($results as $result)
                         </div>
                     </li>
 
-
-
                   <li class="no-padding">
                                 <a class="waves-effect waves-grey" href="logout.php"><i class="material-icons">exit_to_app</i>Sign Out</a>
                             </li>
 
-
                 </ul>
                 <div class="footer">
-                    <p class="copyright">Brought to You By<a href="http://www.code-projects.org/">Code-Projects </a>©</p>
-
                 </div>
                 </div>
             </aside>
